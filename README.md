@@ -1,4 +1,4 @@
-# Simle Accordion Widget
+# Simple Accordion Widget
 
 
 ### Installation
