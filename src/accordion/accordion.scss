@@ -1,0 +1,32 @@
+.accordion {
+    border: 1px solid #9f9f9f;
+    margin: 20px;
+    text-align: left;
+    .accordion-trigger {
+        background: #9f9f9f;
+        color: #fff;
+        cursor: pointer;
+        padding: 20px;
+        &:before {
+            content: '+';
+            display: block;
+            float: right;
+        }
+    }
+    .accordion-item {
+        &.is-active .accordion-trigger:before {
+            content: '-';
+        }
+        &:not(:last-of-type) {
+            border-bottom: 1px solid #888;
+        }
+    }
+    .accordion-content {
+        height: 0px;
+        overflow: hidden;
+        transition: height 0.3s ease;
+        .content {
+            padding: 20px;
+        }
+    }
+}
